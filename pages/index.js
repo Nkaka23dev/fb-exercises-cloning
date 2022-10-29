@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Fragment } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Home () {
   return (
     <Fragment>
-
       <nav className='max-w-6xl h-20 mx-auto font-Roboto'>
         <div className='flex justify-between h-full items-center gap-14'>
           {/* Flex div */}
@@ -133,7 +133,7 @@ export default function Home () {
               viewBox='0 0 24 24'
               width='2em'
               height='1.5em'
-              class='x1lliihq x1heor9g xxk0z11 xvy4d1p'
+              className='x1lliihq x1heor9g xxk0z11 xvy4d1p'
               role='img'
               aria-label='Empty bag'
             >
@@ -144,7 +144,49 @@ export default function Home () {
             </svg>
           </div>
         </div>
-      </nav> 
+      </nav>
+      {/* Section start here */}
+      <section className='max-full h-80 mx-auto font-Roboto flex'>
+        <div className='max-w-md m-auto'>
+          <span className=' text-5xl tracking-wider leading-[3.5rem]'>
+            Bringing people <br></br> closer every day
+          </span>
+          <div className='flex w-3/5 mt-5 gap-3 mx-auto'>
+            <svg
+              className='w-6'
+              viewBox='0 0 38 38'
+              fill='none'
+              xmlns='http://www.w3.org/2000/svg'
+            >
+              <path
+                opacity='0.4'
+                fill-rule='evenodd'
+                clip-rule='evenodd'
+                d='M19 37C9.05887 37 1 28.9411 1 19C1 9.05887 9.05887 1 19 1C28.9411 1 37 9.05887 37 19C37 28.9411 28.9411 37 19 37Z'
+                stroke='#1C2B33'
+              ></path>
+              <path
+                className='_a7uj'
+                d='M21.9657 12L28.9287 18.963L21.9657 25.926L20.7348 24.7193L25.6203 19.8334L10.0001 19.8334V18.0926L25.5966 18.0926L20.7348 13.2309L21.9657 12Z'
+                fill='#1C2B33'
+              ></path>
+              <path
+                className='_a7uk'
+                d='M21.9657 12L28.9287 18.963L21.9657 25.926L20.7348 24.7193L25.6203 19.8334L10.0001 19.8334V18.0926L25.5966 18.0926L20.7348 13.2309L21.9657 12Z'
+                fill='#1C2B33'
+              ></path>
+            </svg>
+            <span>Learn about our mission</span>
+          </div>
+        </div>
+      </section>
+
+      {/* footer section */}
+      <section className='h-full py-20 bg-gray-100'>
+      
+      </section>
+
+      <section className='h-16 bg-white'></section>
     </Fragment>
   )
 }
